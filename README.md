@@ -17,6 +17,6 @@ chmod +x run.sh
 > **Note**
 > Because the dataflowanalyzer is not provided, need to debug the kernel to get the required value in Linux_kernel_exploits/fuze/test/cve-2016-4557exp1.py
 
-## Original reoi
+## Original repo
 
 **https://github.com/ww9210/Linux_kernel_exploits**
