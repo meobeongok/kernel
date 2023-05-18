@@ -1,0 +1,12 @@
+/home/meobeo/Desktop/qemu-2.10.1/x86_64-softmmu/qemu-system-x86_64 \
+-kernel /home/meobeo/Desktop/Linux_kernel_exploits/kernels/linux-4.10-rc8/arch/x86/boot/bzImage \
+-append "console=ttyS0 root=/dev/sda debug earlyprintk=serial oops=panic nokaslr" \
+-hda /home/meobeo/Desktop/Linux_kernel_exploits/kernels/wheezy.img -net user,hostfwd=tcp::10021-:22 \
+ -net nic \
+-snapshot \
+-nographic \
+-m 1G \
+-smp 2 \
+-monitor tcp::9210,server,nowait,nodelay,reconnect=-1 \
+-gdb tcp::1234 \
+-pidfile vm.pid
